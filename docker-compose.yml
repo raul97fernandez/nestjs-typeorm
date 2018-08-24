@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  mysql:
+    image: postgres
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: test
+    ports:
+      - "5432:5432"
+    restart: always
